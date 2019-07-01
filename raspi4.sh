@@ -36,7 +36,14 @@ sudo apt install docker-compose
 echo "installed Docker compose"
 
 
+sudo apt-get install samba samba-common-bin smbclient cifs-utils -y
+
 echo "username=nasaccess" > ~/.smbcredentials
 echo "password=PASSWORD_PLACEHOLDER" >> ~/.smbcredentials
 echo "domain=AD" >> ~/. smbcredentials
 
+mkdir /home/pi/nas
+
+sudo echo "//192.168.1.50/nas /home/pi/nas cifs uid=1000,credentials=/home/pi/.smbcredentials 0 0" >> /etc/fstab
+
+sudo mount -a
