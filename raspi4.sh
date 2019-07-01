@@ -34,3 +34,9 @@ echo "installed Docker"
 
 sudo apt install docker-compose
 echo "installed Docker compose"
+
+
+echo "username=nasaccess" > ~/.smbcredentials
+echo "password=PASSWORD_PLACEHOLDER" >> ~/.smbcredentials
+echo "domain=AD" >> ~/. smbcredentials
+
