@@ -47,3 +47,9 @@ mkdir /home/pi/nas
 sudo echo "//192.168.1.50/nas /home/pi/nas cifs uid=1000,credentials=/home/pi/.smbcredentials 0 0" >> /etc/fstab
 
 sudo mount -a
+
+mkdir /home/pi/dockerdata
+
+docker volume create portainer_data
+docker run -d -p 9000:9000 --name portainer --restart always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer
+
