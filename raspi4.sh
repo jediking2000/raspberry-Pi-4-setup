@@ -53,3 +53,18 @@ mkdir /home/pi/dockerdata
 docker volume create portainer_data
 docker run -d -p 9000:9000 --name portainer --restart always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer
 
+
+
+#Finally, configure network (I hope)
+
+sudo echo "interface eth0" >> /etc/dhcpcd.conf
+sudo echo "static ip_address=192.168.1.11/24" >> /etc/dhcpcd.conf
+sudo echo "static routers=192.168.1.254" >> /etc/dhcpcd.conf
+sudo echo "static domain_name_servers=192.168.1.75" >> /etc/dhcpcd.conf
+sudo echo "static domain_name_search=ad.aarontymo.com" >> /etc/dhcpcd.conf
+
+sudo reboot
+
+
+
+
