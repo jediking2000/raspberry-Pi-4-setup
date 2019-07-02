@@ -18,3 +18,47 @@ sudo apt-get install libssl-dev -y
 sudo apt-get install libvorbis-dev -y
 sudo apt-get install libwebp-dev -y
 
+wget http://sourceforge.net/projects/guacamole/files/current/source/guacamole-server-0.9.14.tar.gz
+wget http://sourceforge.net/projects/guacamole/files/current/source/guacamole-client-0.9.14.tar.gz
+
+tar xzf guacamole-server-0.9.14.tar.gz
+cd guacamole-server-0.9.14
+./configure --with-init-dir=/etc/init.d
+make
+sudo make install
+sudo update-rc.d guacd defaults
+sudo ldconfig
+
+
+
+sudo apt-get install maven
+tar xzf guacamole-client-0.9.14.tar.gz
+cd guacamole-client-0.9.14
+mvn package
+
+
+sudo apt-get install jetty9
+
+sudo cp guacamole/target/guacamole-0.9.14.war /var/lib/jetty9/webapps/guacamole.war
+sudo mkdir -p /etc/guacamole/extensions
+sudo cp extensions/guacamole-auth-noauth/target/guacamole-auth-noauth-0.9.14.jar /etc/guacamole/extensions/.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
