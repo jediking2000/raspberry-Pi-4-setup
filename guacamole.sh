@@ -39,9 +39,9 @@ mvn package
 
 sudo apt-get install jetty9
 
-sudo cp guacamole/target/guacamole-0.9.14.war /var/lib/jetty9/webapps/guacamole.war
+sudo cp guacamole/target/guacamole-1.0.0.war /var/lib/jetty9/webapps/guacamole.war
 sudo mkdir -p /etc/guacamole/extensions
-sudo cp extensions/guacamole-auth-noauth/target/guacamole-auth-noauth-0.9.14.jar /etc/guacamole/extensions/.
+sudo cp extensions/guacamole-auth-noauth/target/guacamole-auth-noauth-1.0.0.jar /etc/guacamole/extensions/.
 
 
 
