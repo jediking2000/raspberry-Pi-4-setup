@@ -5,7 +5,7 @@ sudo apt upgrade -y
 echo "updated system"
 
 sudo apt-get install perl libnet-ssleay-perl openssl libauthen-pam-perl libpam-runtime libio-pty-perl apt-show-versions python -y
-eecho "installed webmin prerequisites"
+echo "installed webmin prerequisites"
 
 wget http://prdownloads.sourceforge.net/webadmin/webmin_1.910_all.deb
 
