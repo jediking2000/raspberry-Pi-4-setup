@@ -18,8 +18,8 @@ sudo apt-get install libssl-dev -y
 sudo apt-get install libvorbis-dev -y
 sudo apt-get install libwebp-dev -y
 
-wget http://apache.org/dyn/closer.cgi?action=download&filename=guacamole/1.0.0/source/guacamole-client-1.0.0.tar.gz
-wget http://apache.org/dyn/closer.cgi?action=download&filename=guacamole/1.0.0/source/guacamole-server-1.0.0.tar.gz
+wget http://sourceforge.net/projects/guacamole/files/current/source/guacamole-server-1.0.0.tar.gz
+wget http://sourceforge.net/projects/guacamole/files/current/source/guacamole-client-1.0.0.tar.gz
 
 tar xzf guacamole-server-1.0.0.tar.gz
 cd guacamole-server-1.0.0
