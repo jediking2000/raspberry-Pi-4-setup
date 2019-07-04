@@ -18,6 +18,8 @@ sudo apt-get install libssl-dev -y
 sudo apt-get install libvorbis-dev -y
 sudo apt-get install libwebp-dev -y
 
+sudo apt-get install -y xrdp
+
 cp ~/nas/guacamole-client-1.0.0.tar.gz ~/guacamole-client-1.0.0.tar.gz
 cp ~/nas/guacamole-server-1.0.0.tar.gz ~/guacamole-server-1.0.0.tar.gz
 
