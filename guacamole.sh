@@ -11,6 +11,10 @@ sudo apt-get install -y xrdp
 sudo apt-get install -y libcairo2-dev libjpeg62-turbo-dev libpng12-dev libossp-uuid-dev libvncserver-dev freerdp-x11 libssh-dev libssh2-1-dev libfreerdp-dev libtelnet-dev
 
 sudo apt-get install -y libavcodec-dev libavutil-dev libswscale-dev libpango1.0-dev libpulse-dev libssl-dev libvorbis-dev libwebp-dev
+sudo apt-get install gawk
+
+
+
 
 
 sudo apt-get update && sudo apt-get install oracle-java8-jdk
