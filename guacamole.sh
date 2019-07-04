@@ -20,6 +20,10 @@ sudo apt-get install libwebp-dev -y
 
 sudo apt-get install -y xrdp
 
+
+sudo apt-get update && sudo apt-get install oracle-java8-jdk
+export JAVA_HOME=/usr/lib/jvm/jdk-8-oracle-arm32-vfp-hflt
+
 cp ~/nas/guacamole-client-1.0.0.tar.gz ~/guacamole-client-1.0.0.tar.gz
 cp ~/nas/guacamole-server-1.0.0.tar.gz ~/guacamole-server-1.0.0.tar.gz
 
