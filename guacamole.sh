@@ -37,21 +37,28 @@ sudo /etc/init.d/guacd status
 sudo service guacd status
 
 
-sudo apt-get install maven
+sudo apt-get install -y maven
 tar xzf guacamole-client-1.0.0.tar.gz
-cd guacamole-client-1.0.0
+cd ./guacamole-client-1.0.0
 mvn package
 
 
 sudo apt-get install jetty9 -y
 
-sudo cp guacamole/target/guacamole-1.0.0.war /var/lib/jetty9/webapps/guacamole.war
-sudo mkdir -p /etc/guacamole/extensions
-sudo cp extensions/guacamole-auth-noauth/target/guacamole-auth-noauth-1.0.0.jar /etc/guacamole/extensions/.
+cd guacamole/target/
+ls guacamole-1.0.0.war
+sudo mv guacamole-1.0.0.war /usr/share/jetty9/webapps/guacamole.war
+sudo service jetty9 restart
 
 
 
 
+sudo mkdir /usr/share/jetty9/.guacamole
+cd /usr/share/jetty9/.guacamole
+
+
+echo "guacd-hostname: localhost" > guacamole.properties
+echo "guacd-port:     4822" >> guacamole.properties
 
 
 
