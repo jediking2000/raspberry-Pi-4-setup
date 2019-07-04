@@ -59,7 +59,7 @@ cd /usr/share/jetty9/.guacamole
 
 echo "guacd-hostname: localhost" > guacamole.properties
 echo "guacd-port:     4822" >> guacamole.properties
-
+echo "lib-directory:  /usr/share/jetty9/.guacamole" >> guacamole.properties
 
 
 
