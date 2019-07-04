@@ -31,6 +31,10 @@ sudo make install
 sudo update-rc.d guacd defaults
 sudo ldconfig
 
+sudo update-rc.d guacd defaults
+sudo /etc/init.d/guacd restart
+sudo /etc/init.d/guacd status
+sudo service guacd status
 
 
 sudo apt-get install maven
