@@ -43,7 +43,7 @@ cd guacamole-client-1.0.0
 mvn package
 
 
-sudo apt-get install jetty9
+sudo apt-get install jetty9 -y
 
 sudo cp guacamole/target/guacamole-1.0.0.war /var/lib/jetty9/webapps/guacamole.war
 sudo mkdir -p /etc/guacamole/extensions
