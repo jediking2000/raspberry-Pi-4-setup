@@ -21,6 +21,11 @@ sudo apt-get install libwebp-dev -y
 sudo apt-get install -y xrdp
 
 
+
+
+
+sudo apt-get install -y libcairo2-dev libjpeg62-turbo-dev libpng12-dev libossp-uuid-dev libvncserver-dev freerdp-x11 libssh-dev libssh2-1-dev libfreerdp-dev libtelnet-dev
+
 sudo apt-get update && sudo apt-get install oracle-java8-jdk
 export JAVA_HOME=/usr/lib/jvm/jdk-8-oracle-arm32-vfp-hflt
 
