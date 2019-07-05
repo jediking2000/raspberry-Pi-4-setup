@@ -57,11 +57,11 @@ sudo mkdir /usr/share/jetty9/.guacamole
 cd /usr/share/jetty9/.guacamole
 
 
-echo "guacd-hostname: localhost" > guacamole.properties
-echo "guacd-port:     4822" >> guacamole.properties
-echo "lib-directory:  /usr/share/jetty9/.guacamole" >> guacamole.properties
-echo "auth-provider: net.sourceforge.guacamole.net.basic.BasicFileAuthenticationProvider" >> guacamole.properties
-echo "basic-user-mapping: /usr/share/jetty9/.guacamole/user-mapping.xml" >> guacamole.properties
+sudo echo "guacd-hostname: localhost" > guacamole.properties
+sudo echo "guacd-port:     4822" >> guacamole.properties
+sudo echo "lib-directory:  /usr/share/jetty9/.guacamole" >> guacamole.properties
+sudo echo "auth-provider: net.sourceforge.guacamole.net.basic.BasicFileAuthenticationProvider" >> guacamole.properties
+sudo echo "basic-user-mapping: /usr/share/jetty9/.guacamole/user-mapping.xml" >> guacamole.properties
 
 
 
